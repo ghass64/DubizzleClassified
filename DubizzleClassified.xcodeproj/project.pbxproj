@@ -25,6 +25,8 @@
 		3FAE2F8F272ACEE500CE1666 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE2F8E272ACEE500CE1666 /* ImageLoader.swift */; };
 		3FAE2F91272AD1AD00CE1666 /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE2F90272AD1AD00CE1666 /* AttributedString.swift */; };
 		3FAE2F93272AD2A600CE1666 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE2F92272AD2A600CE1666 /* UIView.swift */; };
+		3FAE2F99272AD9C500CE1666 /* ItemDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE2F98272AD9C500CE1666 /* ItemDetailsViewController.m */; };
+		3FAE2F9D272ADEA400CE1666 /* ItemsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE2F9C272ADEA400CE1666 /* ItemsDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,10 @@
 		3FAE2F8E272ACEE500CE1666 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		3FAE2F90272AD1AD00CE1666 /* AttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedString.swift; sourceTree = "<group>"; };
 		3FAE2F92272AD2A600CE1666 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		3FAE2F98272AD9C500CE1666 /* ItemDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemDetailsViewController.m; sourceTree = "<group>"; };
+		3FAE2F9A272AD9E100CE1666 /* ItemDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemDetailsViewController.h; sourceTree = "<group>"; };
+		3FAE2F9B272ADAEC00CE1666 /* DubizzleClassified-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DubizzleClassified-Bridging-Header.h"; sourceTree = "<group>"; };
+		3FAE2F9C272ADEA400CE1666 /* ItemsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				3F3EF305272AB10F003BAEF2 /* Items.swift */,
+				3FAE2F9C272ADEA400CE1666 /* ItemsDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -188,6 +195,9 @@
 			isa = PBXGroup;
 			children = (
 				3F3EF2D4272AAEA0003BAEF2 /* ViewController.swift */,
+				3FAE2F9A272AD9E100CE1666 /* ItemDetailsViewController.h */,
+				3FAE2F98272AD9C500CE1666 /* ItemDetailsViewController.m */,
+				3FAE2F9B272ADAEC00CE1666 /* DubizzleClassified-Bridging-Header.h */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -358,9 +368,11 @@
 				3F3EF306272AB10F003BAEF2 /* Items.swift in Sources */,
 				3FAE2F8C272ACA6300CE1666 /* String.swift in Sources */,
 				3F3EF2D5272AAEA0003BAEF2 /* ViewController.swift in Sources */,
+				3FAE2F9D272ADEA400CE1666 /* ItemsDataModel.swift in Sources */,
 				3FAE2F89272ABFAA00CE1666 /* ItemTableViewCell.swift in Sources */,
 				3F3EF2D1272AAEA0003BAEF2 /* AppDelegate.swift in Sources */,
 				3FAE2F84272AB35600CE1666 /* APIService.swift in Sources */,
+				3FAE2F99272AD9C500CE1666 /* ItemDetailsViewController.m in Sources */,
 				3F3EF2D3272AAEA0003BAEF2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

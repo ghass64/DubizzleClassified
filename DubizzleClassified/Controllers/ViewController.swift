@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         }
     }
 
-    func navigateToDeatilView(selectedItem : Result) {
+    func navigateToDetailView(selectedItem : ItemsDataModel) {
         if let vc = self.storyboard?.instantiateViewController(withIdentifier: "ItemDetailsViewController") as? ItemDetailsViewController {
             vc.selectedItem = selectedItem
             self.navigationController?.pushViewController(vc, animated: true)
@@ -65,7 +65,7 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let selectedItem = itemsViewModel.items?.results[indexPath.row] {
-            navigateToDeatilView(selectedItem: selectedItem)
+            navigateToDetailView(selectedItem: ItemsDataModel(model: selectedItem))
         }
     }
     
