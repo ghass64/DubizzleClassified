@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import IHProgressHUD
 
 class ViewController: UIViewController {
 
@@ -49,6 +50,7 @@ class ViewController: UIViewController {
         DispatchQueue.main.async {
             self.tableView.dataSource = self.dataSource
             self.tableView.reloadData()
+            IHProgressHUD.dismiss()
         }
     }
 

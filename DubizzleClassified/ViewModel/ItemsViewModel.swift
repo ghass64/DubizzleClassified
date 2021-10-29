@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import IHProgressHUD
 
 class ItemsViewModel: NSObject {
 
@@ -25,6 +26,7 @@ class ItemsViewModel: NSObject {
     }
     
     func getItemsData() {
+        IHProgressHUD.show()
         self.apiService.apiToGetItemsData { items in
             self.items = items
         }

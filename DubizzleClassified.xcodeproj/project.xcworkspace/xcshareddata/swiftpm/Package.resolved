@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "IHProgressHUD",
+        "repositoryURL": "https://github.com/Swiftify-Corp/IHProgressHUD.git",
+        "state": {
+          "branch": "master",
+          "revision": "a3d94dfb869ff9b2f9e5a4d0359a73a625072853",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

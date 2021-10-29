@@ -27,6 +27,7 @@
 		3FAE2F93272AD2A600CE1666 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE2F92272AD2A600CE1666 /* UIView.swift */; };
 		3FAE2F99272AD9C500CE1666 /* ItemDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE2F98272AD9C500CE1666 /* ItemDetailsViewController.m */; };
 		3FAE2F9D272ADEA400CE1666 /* ItemsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE2F9C272ADEA400CE1666 /* ItemsDataModel.swift */; };
+		3FB341B1272BE6D40000446B /* IHProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 3FB341B0272BE6D40000446B /* IHProgressHUD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FB341B1272BE6D40000446B /* IHProgressHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +246,9 @@
 			dependencies = (
 			);
 			name = DubizzleClassified;
+			packageProductDependencies = (
+				3FB341B0272BE6D40000446B /* IHProgressHUD */,
+			);
 			productName = DubizzleClassified;
 			productReference = 3F3EF2CD272AAEA0003BAEF2 /* DubizzleClassified.app */;
 			productType = "com.apple.product-type.application";
@@ -317,6 +322,9 @@
 				Base,
 			);
 			mainGroup = 3F3EF2C4272AAEA0003BAEF2;
+			packageReferences = (
+				3FB341AF272BE6D40000446B /* XCRemoteSwiftPackageReference "IHProgressHUD" */,
+			);
 			productRefGroup = 3F3EF2CE272AAEA0003BAEF2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -736,6 +744,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3FB341AF272BE6D40000446B /* XCRemoteSwiftPackageReference "IHProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swiftify-Corp/IHProgressHUD.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3FB341B0272BE6D40000446B /* IHProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FB341AF272BE6D40000446B /* XCRemoteSwiftPackageReference "IHProgressHUD" */;
+			productName = IHProgressHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3F3EF2C5272AAEA0003BAEF2 /* Project object */;
 }
