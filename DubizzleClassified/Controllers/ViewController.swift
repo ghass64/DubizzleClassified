@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     
     //MARK: -IBOUTLET
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var itemTableView: UITableView!
     
     
     //MARK: - ViewModel
@@ -48,8 +48,8 @@ class ViewController: UIViewController {
         })
         
         DispatchQueue.main.async {
-            self.tableView.dataSource = self.dataSource
-            self.tableView.reloadData()
+            self.itemTableView.dataSource = self.dataSource
+            self.itemTableView.reloadData()
             IHProgressHUD.dismiss()
         }
     }
@@ -72,6 +72,6 @@ extension ViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 110.0
+        return Constants.CELLHEIGHT
     }
 }

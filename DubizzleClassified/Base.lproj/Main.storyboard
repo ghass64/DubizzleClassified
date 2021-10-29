@@ -91,6 +91,9 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="itemTableView"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Hx8-Q0-VQk"/>
                                 </connections>
@@ -107,7 +110,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Dubizzle" largeTitleDisplayMode="always" id="8Na-vm-gx2"/>
                     <connections>
-                        <outlet property="tableView" destination="TY8-dg-5Hp" id="dLP-eq-i2S"/>
+                        <outlet property="itemTableView" destination="TY8-dg-5Hp" id="dLP-eq-i2S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
