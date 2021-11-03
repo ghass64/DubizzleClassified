@@ -25,6 +25,7 @@ class ItemsViewModel: NSObject {
         getItemsData()
     }
     
+    // this has been added to test the pull request
     func getItemsData() {
         IHProgressHUD.show()
         self.apiService.apiToGetItemsData { items in
